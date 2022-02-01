@@ -8,11 +8,19 @@ public class SumNumbers
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please, digit an integer number");
-        System.out.println(Sum(scanner.nextInt()));
+        System.out.println(multiplesOfThreeOrFiveSum(scanner.nextInt()));
     }
 
-    public static int Sum(int n)
+    public static int sum(int n)
     {
         return  n + 1;
+    }
+
+    public static  int multiplesOfThreeOrFiveSum(int n)
+    {
+        if(n % 3 == 0 || n % 5 == 0)
+            return  n + 1;
+        else
+            return  n;
     }
 }

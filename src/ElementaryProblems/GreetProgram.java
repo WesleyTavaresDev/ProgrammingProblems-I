@@ -12,6 +12,7 @@ public class GreetProgram
         System.out.println("What's your name? ");
         String name = scanner.nextLine();
 
-        System.out.printf("Hey %s, what's going on?", name);
+        if(name.equals("Alice") || name.equals("Bob"))
+            System.out.printf("Hey %s, what's going on?", name);
     }
 }
